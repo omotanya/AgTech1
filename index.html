@@ -1,28 +1,105 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title> "Medicinal Herbs" </title>
-    <section> <hr>
-      <h1>Name of Company</h1> <hr>
-      <h2> Medicinal Herbs for Hormones </h2>
+
+<!-- Used for Metadata, this is information that doesn't directly appear on the web page itself but is important for its proper functioning, indexing by search engines, styles, and user experience.  -->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>My Website</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<!-- Used to define a container for introductory content or a set of navigational links at the top of a web page. -->
+<header id='navbar'>
+  <nav class='container'>
+    <ul>
+        <a href="#">About</a>
+      </li>
+      <li>
+        <a href="#">Skills</a>
+      </li>
+      <li>
+        <a href="#">🍃LOGO🍃</a>
+        <div id= 'logo'>
+      </li>
+      <li>
+        <a href="#">Contact</a>
+      </li>
+        <a href="casestudy.html">Case Study</a>
+          <div id= 'case study'>
+    </li>
+      </li>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Used to define the main content of a web page. Everything that is visible on a web page, including text, images, links, forms, and other multimedia elements, is typically placed within the <body> element. It represents the "body" or main content area of the HTML document. -->
+<body>
+  <section id='hero'>
+    <div id='hero-text'>
+      <h1>👋 Hi My name is Uju</h1>
+    </div>
+  </section>
+
+  <section id='about'>
+    <class='container'>
+      <div class='text-alignment-right'>
+          <div class="box" id="box1"></div>
+    <aside>
+      <h1 class='text-alignment-left'>About</h1>
+      <p class='text-alignment-left'>Hi my name is Uju. I have a background in Biology but I have always been curious about plants. After gaining experience in many different fields after college, I learned about Change Food For Good where I was able to learn about Agriculture and farming techniques. I discovered the issue I wanted to address was growing medicinal herbs indoors. I wanted to address women’s hormonal issues like PMDD with the herb mugwort and make teas that would be potent enough to make a difference unlike other teas which are usually not locally sourced.
+      </p>      
+    </aside>
+  
+
+        
+  
+
+  <section id='skills'>
+    <section class='container'>
+      <h1 class='text-alignment-center'>Skills</h1>
+      <p class='text-alignment-center'>Mad skills</p>
+      <div class='text-alignment-center'>
+          <div class="box" id="box">HTML</div>
+          <div class="box" id= "box2">CSS</div>
+          <div class="box" id= "box3">Javascript</div>
+          <div class="box" id= "box4">Hydroponics</div>
+        </div>
     </section>
-  </head>
+        
+        <!-- </div>
+    </section>
+      </div>
+    </section>
+  </section> -->
 
-<body> <hr><img src= https://www.almanaturals.net/cdn/shop/products/vitex_540x.jpg?v=1587324194 alt="Plant Medicine"<hr>
-  <img src=https://i.pinimg.com/736x/b9/3e/77/b93e772638ee08063cea92251f1e9fd2.jpg
-    alt="Woman in garden"<hr>
+  <section id='contact'>
+    <h1 class='text-alignment-center'>Contact Me</h1>
+    <form action='/submit' class='container text-alignment-center'>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name">
+      <br><br>
+      <label for="message">Message:</label>
+      <textarea id='message' name='message' required></textarea> 
+      <br><br>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
 
-</body
+</body>
 
-
-<footer>
-  <section>
-<h1> Contact Me </h1>
-  <p>Author: Uju Motanya</p>
-    <p><a href="mailto:ujumotanya@gmail.com">ujumotanya@gmail.com</a></p>
+<!-- Used to define the footer section of a web page or a specific section within a web page. It typically contains information or elements that are meant to appear at the bottom of the page, such as copyright information, contact details, links to related pages, and other supplementary content. -->
+<footer id='footer'>
+  <section class='container'>
+    <h2 class='text-alignment-center'>Footer</h2>
+    <p class='text-alignment-center'>&copy; 2023 My Web Page</p>
+    <p class='text-alignment-right'> ✉ 
+ ujumotanya@gmail.com</p>
+    <p class='text-alignment-right'> linkedin.com/in/obianuju-motanya</p>
   </section>
 </footer>
-
 
 </html>
 

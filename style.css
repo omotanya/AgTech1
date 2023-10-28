@@ -2,3 +2,226 @@ html {
   height: 100%;
   width: 100%;
 }
+/* ======================================
+  CSS Reset
+  https://dev.to/hankchizljaw/a-modern-css-reset-6p3
+  Box sizing rules
+========================================= */
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+  ul[class],
+  ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+ul {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  font-family: Cutive Mono;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20px;
+    letter-spacing: .06em;
+    line-height: 1.8em;
+    text-transform: none;
+    color:#36454F;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* strip all pre-defined css rules  */
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+    
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/* ======================================
+  css reset 2024 END
+========================================= */
+
+/* ======================================
+  AG TECH CLASS CSS 👇👇👇👇👇👇👇👇
+========================================= */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-left: 2rem;
+  padding-right: 2rem; 
+}
+
+
+/* Skills box,contact and footer */
+.text-alignment-center {
+  text-align: center;
+}
+
+.p {
+  text-align: right;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: #868C79;
+    border: 1px solid #B7BFA4;
+    margin: 10px;
+    display: inline-block;
+    text-align: center; /* Horizontal alignment */
+    line-height: 100px; /* Vertical alignment */
+}
+
+    
+  }
+}
+/* Me picture */
+#box1{
+  background-image: url(me.jpg);
+  /* object-fit: cover; */
+  /* background-position: left; */
+  /* background-repeat: norepeat; */
+}
+  
+  
+/* Hydroponics pic */
+#box4{
+  background-color: orange;
+  background-image: url(https://media.istockphoto.com/id/1174329744/photo/greenhouse-vegetables-plant-with-led-light-indoor-farm-technology.jpg?s=612x612&w=0&k=20&c=e07L79CgWQBdTnOVZbaz_xJi_4tlgEgzt1eqODwYFjo=);
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: .65;
+  color: black;
+  /* <svg width="600" height="400">
+  <mask id="svgmask1">
+    <polygon fill="#ffffff" points="200 0, 400 400, 0 400"></polygon>
+  </mask>
+  <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img_5terre.jpg" mask="url(#svgmask1)"></image>
+</svg> */
+}
+
+
+  /* /* width: 10vh; */
+  /* height: 20vh;  */
+  
+}
+#box{
+  background-color: orange;
+}
+#box2{
+  background-color: green;
+}
+#box3{
+  background-color: lavender;
+}
+#hero {
+  background-image: url("https://media.istockphoto.com/id/1175653570/photo/purple-vitex-tree.jpg?s=612x612&w=0&k=20&c=8DfK9SvNvjxlCQLM1N_n8Zt-bnpjWmUYNY0t4R8Gm70=");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100wh;
+  height: 50vh;
+  display: flex;
+  
+}
+
+    img{
+      border-radius:50%; 
+  }
+#hero-text {
+  align-items: center;
+  border-radius: 10px;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  margin: auto;
+  width: 400px;
+  padding: 10px;
+  flex-direction: column;
+}
+
+#navbar {
+  background-color: #black;
+}
+
+#navbar ul {
+  list-style: none;
+  display: flex; /* provides horizontal alignment */
+  justify-content: space-between;
+  padding: 20px;
+}
+
+#navbar: li {
+  margin: 0 10px;
+}
+
+#navbar: a {
+  text-decoration: none;
+  color: grey;
+  font-weight: bold;
+}
+
+#about:hover {
+  background-color: #D2B58B;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  transition-timing-function: linear;
+}
+
+#skills {
+  background-color: #B09176;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#contact {
+  background-color: #8C5340;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#footer {
+  background: #835C3B;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+    #footer.mix{
+      border-style: dotted dashed solid double;
+      color:brown;
+    }
