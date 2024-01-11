@@ -1,0 +1,96 @@
+#nav{
+  background-color:#B87333
+}
+
+.custom-file {
+  position: relative;
+  display: inline-block;
+}
+
+.custom-file-input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.custom-file-label {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #fff;
+  background-color: #ff6347;
+  border-radius: 0.35rem;
+  display: flex;
+  align-items: center;
+}
+
+.custom-file-label::after {
+  content: "Upload";
+}
+.custom-file-label::after {
+  content: "Upload";
+}
+
+.custom-file-input:valid + .custom-file-label::after {
+  content: "File uploaded!";
+}
+
+.custom-file-input:focus + .custom-file-label,
+.custom-file-input.has-focus + .custom-file-label {
+  border-color: red;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+body {
+  background-image: url("https://images.pexels.com/photos/3876635/pexels-photo-3876635.jpeg?auto=compress&cs=tinysrgb&w=600"); 
+  background-repeat: repeat;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+}
+#contact{
+  bottom: 0;
+  width: 100%;
+  background-color: blanchedalmond;
+  padding:10px 20px;
+  margin: 0 auto;
+  z-index: 1000;
+}
+/* body {
+    height: 377px;
+    width: 377px;
+    background-image: url("https://images.pexels.com/photos/1440477/pexels-photo-1440477.jpeg?auto=compress&cs=tinysrgb&w=600"), url(https://images.pexels.com/photos/1440477/pexels-photo-1440477.jpeg?auto=compress&cs=tinysrgb&w=600");
+    background-position: top left, bottom right;
+    background-repeat: no-repeat;
+    background-size: 50% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+
+#contactPlantID {
+  /* position: fixed; */
+  bottom: 0;
+  width: 100%;
+  background-color: blanchedalmond;
+  padding: 10px 20px;
+  margin: 0 auto;
+  z-index: 1000;
+}
+
+.centerContactPlantIDText {
+  display: flex;
+  justify-content: center;
+}

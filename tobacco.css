@@ -1,0 +1,64 @@
+/* <!-- #### Tobacco Project Page ####  --> */
+#navbar {
+  background-color:#B87333;
+}
+
+#navbar ul {
+  list-style: none;
+  display: flex; 
+  justify-content: space-between;
+  padding: 20px;
+  flex-direction: row;
+  margin-bottom: 0;
+}
+
+#navbar li {
+  margin: 0 10px;
+  font-size: 20px;
+}
+
+#navbar a {
+  text-decoration: none;
+  color:white;
+  font-weight: bold;
+  
+body {
+  font-family:Arial, sans-serif;
+  background-color: #f4f4f4
+  color: #333;
+  margin: 40px;
+  padding: 40px;
+  font-size: 30px;
+}
+
+article{
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 40px;
+  background-color: #e4f6f8;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-size: 30px;
+}
+
+#container{
+  font-size: 30px;
+}
+
+p{
+  text-align: justify;
+  line-height: 1.6;
+  font-size: 30px;
+
+}
+
+img{
+  max-width: 400px;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+}
+
+#case-description{
+  background-image: url("PXL_20231208_031532080.jpg");
+  color: white;
+}

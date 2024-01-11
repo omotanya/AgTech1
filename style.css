@@ -1,7 +1,7 @@
-html {
+/* html {
   height: 100%;
   width: 100%;
-}
+} */
 /* ======================================
   CSS Reset
   https://dev.to/hankchizljaw/a-modern-css-reset-6p3
@@ -44,7 +44,7 @@ body {
   font-family: Cutive Mono;
     font-weight: 300;
     font-style: normal;
-    font-size: 20px;
+    font-size: 30px;
     letter-spacing: .06em;
     line-height: 1.8em;
     text-transform: none;
@@ -52,7 +52,8 @@ body {
   min-height: 100vh;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
-  line-height: 1.5;
+  text-align: center;
+  align-items: center;
 }
 
 /* strip all pre-defined css rules  */
@@ -65,6 +66,7 @@ a {
 img {
   max-width: 100%;
   display: block;
+  /* border-radius:50%;  */
 }
     
 /* Inherit fonts for inputs and buttons */
@@ -108,17 +110,23 @@ select {
     text-align: center; /* Horizontal alignment */
     line-height: 100px; /* Vertical alignment */
 }
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}
 
     
-  }
-}
+  
+
 /* Me picture */
-#box1{
-  background-image: url(me.jpg);
+/* #box1{
+  background-image: url(me.jpg); */
   /* object-fit: cover; */
   /* background-position: left; */
   /* background-repeat: norepeat; */
-}
+
   
   
 /* Hydroponics pic */
@@ -129,6 +137,8 @@ select {
   background-repeat: no-repeat;
   opacity: .65;
   color: black;
+  height: 30vh;
+  width: 50vh;
   /* <svg width="600" height="400">
   <mask id="svgmask1">
     <polygon fill="#ffffff" points="200 0, 400 400, 0 400"></polygon>
@@ -136,23 +146,27 @@ select {
   <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img_5terre.jpg" mask="url(#svgmask1)"></image>
 </svg> */
 }
-
-
-  /* /* width: 10vh; */
-  /* height: 20vh;  */
   
 }
 #box{
   background-color: orange;
+  height: 30vh;
+  width: 50vh;
 }
 #box2{
   background-color: green;
+  height: 20vh;
+  width: 20vh;
 }
 #box3{
-  background-color: lavender;
+  background-color:#868C79;
+  height: 30vh;
+  width: 30vh;
 }
+
+
 #hero {
-  background-image: url("https://media.istockphoto.com/id/1175653570/photo/purple-vitex-tree.jpg?s=612x612&w=0&k=20&c=8DfK9SvNvjxlCQLM1N_n8Zt-bnpjWmUYNY0t4R8Gm70=");
+  background-image: url("https://images.pexels.com/photos/10893107/pexels-photo-10893107.jpeg?auto=compress&cs=tinysrgb&w=600");
   background-size: cover;
   background-repeat: no-repeat;
   width: 100wh;
@@ -161,9 +175,7 @@ select {
   
 }
 
-    img{
-      border-radius:50%; 
-  }
+
 #hero-text {
   align-items: center;
   border-radius: 10px;
@@ -174,54 +186,249 @@ select {
   width: 400px;
   padding: 10px;
   flex-direction: column;
+
+/* #about-text {
+  align-items: right; */
+  
 }
 
+/*=========================================
+  Hamburger Icon Styles START
+/* ======================================*/ 
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 10px;
+  position: absolute; 
+  top: 10px;  /* Adjust the top position as needed */
+  right: 20px; /* Adjust the right position as needed */
+  z-index: 1;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: hotpink;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+/*=========================================
+  Hamburger Icon Styles END
+/* ======================================*/ 
+
+ 
 #navbar {
-  background-color: #black;
+  background-color:#B87333;
 }
 
 #navbar ul {
   list-style: none;
-  display: flex; /* provides horizontal alignment */
+  display: flex; 
   justify-content: space-between;
   padding: 20px;
+  flex-direction: row;
+  margin-bottom: 0;
 }
 
-#navbar: li {
+#navbar li {
   margin: 0 10px;
+  font-size: 20px;
 }
 
-#navbar: a {
+#navbar a {
   text-decoration: none;
-  color: grey;
+  color: white;
   font-weight: bold;
 }
 
 #about:hover {
-  background-color: #D2B58B;
+  background-color: lavender;
   padding-top: 20px;
   padding-bottom: 20px;
   transition-timing-function: linear;
+  font-size: 30px;
 }
 
-#skills {
-  background-color: #B09176;
-  padding-top: 20px;
-  padding-bottom: 20px;
+#my-image {
+  width: 300%;
+  height: auto;
+  padding: 20px;
+  max-width: 250px;
 }
 
-#contact {
-  background-color: #8C5340;
+#about {
+  background-color:lavender;
+  padding: 60px;
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  border: 20px solid #B87333;
+}
+  
+  
+   
+
+#about-text {
+vertical-align: top;
+padding-bottom: 20px;
+padding-left: 20px;
+  
+}  
+ 
+#skills:hover {
+  background-color: lavender;
   padding-top: 20px;
   padding-bottom: 20px;
+  font-size: 30px;
 }
 
-#footer {
-  background: #835C3B;
+#skills{
+  background-color: lavender;
+  font-size: 30px;
+}
+
+#contact:hover {
+  background-color: blanchedalmond;
   padding-top: 20px;
   padding-bottom: 20px;
+  font-size: 30px;
 }
+#contact{
+  display: flex;
+  background-color: blanchedalmond;
+  color: black;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  font-size: 30px;
+}
+.hstack {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-self: stretch;
+  
+}
+
+.vstack {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  align-self: stretch;
+}
+
+#footer:hover {
+  background: #4C6665;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: grey;
+}
+#footer{
+  background: #FF9966;
+  padding-bottom:20px
+}
+
     #footer.mix{
       border-style: dotted dashed solid double;
       color:brown;
     }
+
+@media all and (max-width: 1400px) {
+  #about {
+    background-color: lavender;
+    color: black;
+  }
+}
+
+@media all and (max-width: 1400px) {
+  #skills {
+    background-color: lavender;
+    color: black; 
+  }
+}
+
+  /* #navbar ul {
+    display: flex;
+    background-color: white;
+    flex-direction: column; /* Stack the links vertically */
+    /* text-align: center; /* Center-align the links */
+    /* position: absolute; /* Position it above the content */ 
+    /* top: 60px; /* Adjust the top position as needed */ 
+    /* right: 0; /* Position it to the right */ 
+    /* z-index: 1; /* Ensure it's on top of other elements */ 
+  /* } */
+ 
+  #navbar ul.active {
+    display: flex; /* Show the navigation links when active class is added */ 
+  }
+
+    
+
+.image-section { 
+  background-color: pink;
+  padding: 20px;
+}
+
+/* #alignAboutMe {
+  display: flex;
+  justify-content: center; */
+}
+
+@media all and (max-width: 768px) {
+  #skills {
+    background-color: #82a182;
+    color: white; 
+  }
+
+  .menu-toggle {
+    display: flex;
+  } 
+
+  #navbar ul {
+    display: none;
+    background-color: black;
+    flex-direction: column; /* Stack the links vertically */
+    text-align: center; /* Center-align the links */
+    position: absolute; /* Position it above the content */
+    top: 60px; /* Adjust the top position as needed */
+    right: 0; /* Position it to the right */
+    z-index: 1; /* Ensure it's on top of other elements */
+  }
+
+  #navbar ul.active {
+    display: flex; /* Show the navigation links when active class is added */
+  }
+}
+
+@media all and (max-width: 992px) {
+  #about {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* #headShot {
+    display: flex;
+    justify-content: center; */
+  }
+
+  /* #alignAboutMe {
+    display: flex;
+    justify-content: center; */
+  }
+}
+
+
+
+@media all and (max-width: 1400px) {
+  #footer {
+    background-color: pink;
+    color: black;
+    font-size: 20px;
+  }
+}
+
+

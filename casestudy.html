@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Used for Metadata, this is information that doesn't directly appear on the web page itself but is important for its proper functioning, indexing by search engines, styles, and user experience.  -->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>My Website</title>
+  <!-- <link href="style.css" rel="stylesheet" type="text/css"/> -->
+  <link href="casestyle.css" rel="stylesheet" type="text/css"/>
+ 
+</head>
+
+<!-- Used to define a container for introductory content or a set of navigational links at the top of a web page. -->
+<header id='navbar'>
+  <nav class='container'>
+    <div class="menu-toggle">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+
+    <ul>
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+      <li>
+        <a href="casestudy.html">Case Studies</a>
+          <div id= 'casestudy'>
+          </div>
+      </li>
+      <li>
+        <a href="plantidentifier.html">Plant Identifier</a>
+            <div id= 'plantidentifier'>
+            </div>
+      </li>
+      <li>
+        <a href="index.html#about">About</a>
+      </li>
+      <li>
+        <a href="index.html#skills">Skills</a>
+      </li>
+      
+      <li>
+        <a href="index.html#contact">Contact</a>
+      </li>
+     </ul>
+  </nav>
+</header>
+<body>
+  <div class="container">
+  <h1>My Projects</h1>
+
+  <div class="project" onclick="toggleDetails('project1')">
+    <h2>Farm Design</h2>
+    <div class="details" id="project1Details">
+      <p>I designed my own farm system to help those struggling with hormonal imbalances</p>
+      <a href="farmdesign.html">View Project</a>
+      <img src="nft.jpg" alt="Project 1 Image" height="300" width="300">
+
+    </div>
+  </div>
+
+    <div class="project" onclick="toggleDetails('project2')">
+        <h2>Tobacco and Vanilla</h2>
+        <div class="details" id="project2Details">
+          <p>We injected tobacco Leaves with a Vanilla bacterium through a process called agroinfiltration</p>
+          <a href="tobacco.html">View Project</a>
+          <img src="tobacco2.jpg" alt="Project 2 Image" height="300" width="300">
+        </div>
+      </div>
+
+      <div class="project" onclick="toggleDetails('project3')">
+        <h2>Plant Health Assessment</h2>
+        <div class="details" id="project3Details">
+          <p>This app will help to identify the issue of the plant by using the image</p>
+          <a href="plantidentifier.html">View App</a>
+          <img src="yellow-and-green-leaves.jpg" alt="Project 3 Image" height="300" width="300">
+        </div>
+      </div>
+    </div>
+  <section id='case-description'>
+    <section class='container'>
+      <div class='text-alignment-right'> </div>
+       <div class='image-section'>  
+     </section>   
+  </section>
+  <section id='contact'>
+    <section class='container'>
+      <h2 class='text-alignment-center'>Contact Me</h2>
+      <p class='text-alignment-center'> ✉ ujumotanya@gmail.com</p>
+      <h2 class='text-alignment-center'></h2>
+        <a href="https://www.linkedin.com/in/obianuju-motanya/" target="_blank">Visit my LinkedIn profile</a> 
+    </section>
+  </section>
+  <script src="casescript.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+    
+    
+    
